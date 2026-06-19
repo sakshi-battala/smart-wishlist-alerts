@@ -1,0 +1,17 @@
+{
+  "name": "smart-wishlist-alerts",
+  "version": "0.1.0",
+  "description": "A small script-tag library that watches wishlist items and raises alerts for price drops, low stock, back-in-stock, and reminders.",
+  "main": "dist/wishlist-alerts.js",
+  "module": "dist/wishlist-alerts.mjs",
+  "types": "dist/wishlist-alerts.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}

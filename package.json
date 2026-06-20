@@ -5,6 +5,9 @@
   "main": "dist/wishlist-alerts.js",
   "module": "dist/wishlist-alerts.mjs",
   "types": "dist/wishlist-alerts.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"

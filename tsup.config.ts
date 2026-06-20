@@ -8,4 +8,12 @@ export default defineConfig({
   sourcemap: true,
   minify: true,
   clean: true,
+  footer: (ctx) => {
+    if (ctx.format === "iife") {
+      return {
+        js: "window.SmartWishlistAlerts = window.SmartWishlistAlerts.default;",
+      };
+    }
+    return {};
+  },
 });

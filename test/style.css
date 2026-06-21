@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+.stat {
+  font-size: 14px;
+  color: #444;
+  margin: 4px 0;
+}
+label {
+  display: block;
+  font-size: 13px;
+  margin: 10px 0 4px;
+}
+input {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+button {
+  margin-top: 12px;
+  padding: 8px 14px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.alert {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+.price_drop {
+  border-color: #2e7d32;
+  background: #e8f5e9;
+}
+.low_stock {
+  border-color: #f9a825;
+  background: #fffde7;
+}
+.back_in_stock {
+  border-color: #1565c0;
+  background: #e3f2fd;
+}
+.reminder {
+  border-color: #6a1b9a;
+  background: #f3e5f5;
+}

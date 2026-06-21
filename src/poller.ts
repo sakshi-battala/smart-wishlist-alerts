@@ -10,6 +10,7 @@ export interface PollerOptions {
 export interface Poller {
   start: () => void;
   stop: () => void;
+  checkNow: () => void;
 }
 
 export function createPoller(options: PollerOptions): Poller {
@@ -67,5 +68,5 @@ export function createPoller(options: PollerOptions): Poller {
     document.removeEventListener("visibilitychange", handleVisibilityChange);
   }
 
-  return { start, stop };
+  return { start, stop, checkNow: runCheck };
 }

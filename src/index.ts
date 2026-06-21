@@ -151,11 +151,16 @@ function getAlerts(): WishlistAlert[] {
   return store?.getAlerts() ?? [];
 }
 
+function checkNow() {
+  poller?.checkNow();
+}
+
 const SmartWishlistAlerts = {
   init,
   updateItems,
   dismissAlert,
   markAsViewed,
   getAlerts,
+  checkNow,
 };
 export default SmartWishlistAlerts;
